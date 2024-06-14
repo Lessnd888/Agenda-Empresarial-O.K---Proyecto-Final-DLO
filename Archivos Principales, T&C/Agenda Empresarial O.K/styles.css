@@ -32,6 +32,19 @@ header {
   margin: 6px;
 }
 
+#btn-tc a{
+  text-decoration: none;
+  color: white;
+  margin: 500px 0 0 0;
+}
+
+#btn-tc{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
 table {
   margin: 30px 0 0 0;
 }
