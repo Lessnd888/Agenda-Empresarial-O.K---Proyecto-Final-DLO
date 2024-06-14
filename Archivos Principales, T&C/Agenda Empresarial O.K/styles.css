@@ -1,0 +1,132 @@
+body {
+  color: white;
+  background-color: #21252a;
+}
+
+nav {
+  background-color: #0d6efd;
+}
+
+header {
+  margin: 50px 0 0 0;
+}
+
+#linea1 {
+  display: flex; 
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+#linea2 {
+  display: flex; 
+  align-items: baseline;
+  margin: 15px 0 0 0;
+}
+
+#newContact{
+  width: 150px;
+  
+}
+
+#btns-subNreturn {
+  margin: 6px;
+}
+
+table {
+  margin: 30px 0 0 0;
+}
+
+#card {
+  margin: 25px 10px 15px 10px;
+  background-color: #407445;
+  color: white;
+}
+
+#card-body {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: -10px 0 0 0;
+}
+
+#title {
+  font-size: larger;
+  font-weight: bold;
+}
+
+#little {
+  margin: -10px 0 0 0;
+  font-size: small;
+}
+
+#item {
+  padding: 7px 0 0 0;
+}
+#contactContainer{
+  padding: 10px 60px 30px;
+  animation: alternate;
+  justify-content: center;
+  margin-right: 20px;
+  width:auto;
+  padding: 20px;
+}
+.dropdown>input{
+  width: 100%;
+}
+#contactForm{
+width: auto;
+  padding: 10px 60px 30px;
+}
+.card-body{
+  cursor: pointer;
+}
+/* Animación de entrada para la página */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Animaciones para mostrar y ocultar el formulario */
+@keyframes slideDown {
+  from {
+    transform: translateX(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+}
+
+#contactForm.show{
+  animation: slideDown 0.9s forwards;
+}
+
+#contactForm.hide{
+  animation: slideUp 0.9s forwards;
+}
+#contactContainer{
+  animation: slideDown 1s forwards;
+}
+
